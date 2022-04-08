@@ -2,25 +2,23 @@
 
 void triangolo(int n) {
     
-    int i, j;
+    int i, j, y, na = 1, ns = 0;
 
     //righe
-    for (j = 0; j < n; j++) {
+    for (i = 0; i < n; i++) {
 
         //colonne
-        for (i = 0; i < n-1; i++) {
-            if (i < n-2) {
-                printf(" ");
-            }
-            else {
-                for (i = 0; i <= 20; i+2){
-
-                    
-                
-                    printf("*");
-                }
-            }
+        for (j = 0; j < n-i; j++) {
+            printf(" ");
         }
+            
+        for (y = 0; y < na; y++) {
+            printf("*");
+        }
+
+        na = na + 2;
+    
+    
     printf("\n");
     }     
 
