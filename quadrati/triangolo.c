@@ -2,7 +2,7 @@
 
 void triangolo(int n) {
     
-    int i, j, y, na = 1, ns = 0;
+    int i, j, y, na = 1;
 
     //righe
     for (i = 0; i < n; i++) {
@@ -16,7 +16,7 @@ void triangolo(int n) {
             printf("*");
         }
 
-        na = na + 2;
+        na += 2;
     
     
     printf("\n");
